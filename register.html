@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="resources.html">Resources</a> |
+    <a href="register.html">Register</a>
+</nav>
+
+<hr>
+
+<form>
+
+<h2>Personal Information</h2>
+
+<label>First Name:</label><br>
+<input type="text" name="firstname" required><br><br>
+
+<label>Last Name:</label><br>
+<input type="text" name="lastname" required><br><br>
+
+<label>Student ID:</label><br>
+<input type="text" name="studentid" required><br><br>
+
+<label>Email Address:</label><br>
+<input type="email" name="email" required><br><br>
+
+<label>Phone Number:</label><br>
+<input type="tel" name="phone" required><br><br>
+
+<label>Home Address:</label><br>
+<input type="text" name="address" required><br><br>
+
+<label>Date of Birth:</label><br>
+<input type="date" name="dob"><br><br>
+
+<label>Age:</label><br>
+<input type="number" name="age"><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+<br><br>
+
+<label>Course of Study:</label><br>
+<select name="course">
+    <option>Computer Science</option>
+    <option>Information Technology</option>
+    <option>Business</option>
+    <option>Engineering</option>
+</select>
+<br><br>
+
+<label>Areas of Interest:</label><br>
+<input type="checkbox" name="interest1"> Programming
+<input type="checkbox" name="interest2"> Networking
+<input type="checkbox" name="interest3"> Web Design
+<input type="checkbox" name="interest4"> Cyber Security
+<br><br>
+
+<label>Additional Comments:</label><br>
+<textarea rows="5" cols="40"></textarea>
+<br><br>
+
+<input type="submit" value="Register">
+<input type="reset" value="Clear Form">
+
+</form>
+
+</body>
+</html>
