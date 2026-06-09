@@ -1,78 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Registration</title>
+<meta charset="UTF-8">
+<title>Student Registration - Student Study Hub</title>
 </head>
+
 <body>
 
-<h1>Student Registration Form</h1>
+ <header>
+<h1>Student Registration Portal</h1>
+ <p><em>Create your account to access study materials, resources, and updates.</em></p>
+ </header>
 
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="resources.html">Resources</a> |
-    <a href="register.html">Register</a>
-</nav>
+    <nav>
+ <a href="index.html">Home</a> |
+ <a href="resources.html">Resources</a> |
+ <a href="register.html">Register</a>
+    </nav>
 
-<hr>
+ <hr>
 
-<form>
+ <form>
 
-<h2>Personal Information</h2>
+ <section>
+      <h2>Personal Information</h2>
 
-<label>First Name:</label><br>
-<input type="text" name="firstname" required><br><br>
+ <label>First Name:</label><br>
+ <input type="text" name="firstname" required><br><br>
 
-<label>Last Name:</label><br>
-<input type="text" name="lastname" required><br><br>
+ <label>Last Name:</label><br>
+ <input type="text" name="lastname" required><br><br>
 
-<label>Student ID:</label><br>
-<input type="text" name="studentid" required><br><br>
+ <label>Date of Birth:</label><br>
+ <input type="date" name="dob" required><br><br>
 
-<label>Email Address:</label><br>
-<input type="email" name="email" required><br><br>
-
-<label>Phone Number:</label><br>
-<input type="tel" name="phone" required><br><br>
-
-<label>Home Address:</label><br>
-<input type="text" name="address" required><br><br>
-
-<label>Date of Birth:</label><br>
-<input type="date" name="dob"><br><br>
-
-<label>Age:</label><br>
-<input type="number" name="age"><br><br>
-
-<label>Gender:</label><br>
+ <label>Gender:</label><br>
 <input type="radio" name="gender" value="Male"> Male
 <input type="radio" name="gender" value="Female"> Female
-<input type="radio" name="gender" value="Other"> Other
-<br><br>
+ <input type="radio" name="gender" value="Other"> Other
+ <br><br>
+</section>
 
-<label>Course of Study:</label><br>
-<select name="course">
-    <option>Computer Science</option>
-    <option>Information Technology</option>
-    <option>Business</option>
-    <option>Engineering</option>
-</select>
-<br><br>
+ <hr>
 
-<label>Areas of Interest:</label><br>
-<input type="checkbox" name="interest1"> Programming
-<input type="checkbox" name="interest2"> Networking
-<input type="checkbox" name="interest3"> Web Design
-<input type="checkbox" name="interest4"> Cyber Security
-<br><br>
+ <section>
+       <h2>Contact Information</h2>
 
-<label>Additional Comments:</label><br>
-<textarea rows="5" cols="40"></textarea>
-<br><br>
+ <label>Email Address:</label><br>
+<input type="email" name="email" required><br><br>
 
-<input type="submit" value="Register">
-<input type="reset" value="Clear Form">
+ <label>Phone Number:</label><br>
+ <input type="tel" name="phone" required placeholder="+254..."><br><br>
 
-</form>
+ <label>Home Address:</label><br>
+ <input type="text" name="address" required><br><br>
+  </section>
+
+ <hr>
+
+ <section>
+  <h2>Academic Information</h2>
+
+ <label>Student ID:</label><br>
+ <input type="text" name="studentid" required><br><br>
+
+<label>Level of Study:</label><br>
+ <select name="level">
+  <option>Primary School</option>
+ <option>High School</option>
+ <option>College</option>
+ <option>University</option>
+ </select>
+ <br><br>
+
+ <label>Course / Subjects of Interest:</label><br>
+  <input type="checkbox" name="math"> Mathematics<br>
+  <input type="checkbox" name="science"> Science<br>
+  <input type="checkbox" name="english"> English<br>
+  <input type="checkbox" name="cs"> Computer Studies<br>
+     </section>
+
+ <hr>
+
+ <section>
+  <h2>Create Login Details</h2>
+
+ <label>Username:</label><br>
+  <input type="text" name="username" required><br><br>
+
+ <label>Password:</label><br>
+ <input type="password" name="password" required><br><br>
+ </section>
+
+  <hr>
+
+ <section>
+  <h2>Additional Information</h2>
+
+ <label>Why are you joining Student Study Hub?</label><br>
+   <textarea name="reason" rows="5" cols="40" placeholder="Write your reason here..."></textarea>
+</section>
+
+ <hr>
+
+ <section>
+ <input type="submit" value="Create Account">
+ <input type="reset" value="Clear Form">
+ </section>
+
+ </form>
+
+ <hr>
+
+ <footer>
+  <p>© 2026 Student Study Hub | Registration System</p>
+ </footer>
 
 </body>
 </html>
